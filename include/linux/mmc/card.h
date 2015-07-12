@@ -210,6 +210,7 @@ struct mmc_card {
 #define MMC_QUIRK_BLK_NO_CMD23	(1<<7)		/* Avoid CMD23 for regular multiblock */
 /* MoviNAND secure issue */
 #define MMC_QUIRK_MOVINAND_SECURE (1<<8)
+#define MMC_QUIRK_SAMSUNG_WL_PATCH (1<<9)	/* Patch Samsung FW to fix wear leveling bug */
 
 	unsigned int    poweroff_notify_state;	/* eMMC4.5 notify feature */
 #define MMC_NO_POWER_NOTIFICATION	0
@@ -441,5 +442,6 @@ extern void mmc_unregister_driver(struct mmc_driver *);
 
 extern void mmc_fixup_device(struct mmc_card *card,
 			     const struct mmc_fixup *table);
+extern void mmc_fixup_samsung_fw(struct mmc_card *card);
 
 #endif

@@ -1,1 +1,5 @@
-boot.cpio
+#
+# Exceptions
+#
+!busybox
+!init

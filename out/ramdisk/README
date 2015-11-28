@@ -1,0 +1,7 @@
+*****WARNING*****
+INLINE BUILDING ONLY
+
+***Instructions on how to use prebuilt TWRP recovery binary***
+1> Browse to the kernel directory & then traverse to 'out/ramdisk' path.
+2> Open 'i9100.list'.
+3> Replace the line 'file /stage1/recovery.cpio ../../ramdisk-recovery.cpio 644 0 0' with 'file /stage1/recovery.cpio source/out/ramdisk/TWRP-x.x.x.x.cpio 644 0 0'.

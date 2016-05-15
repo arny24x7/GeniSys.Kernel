@@ -19,8 +19,8 @@ nod /dev/block/mmcblk1p1 600 0 0 b 179 17
 slink /init /stage1/init 777 0 0
 dir /proc 755 0 0
 dir /stage1 755 0 0
-file /stage1/busybox source/out/ramdisk/busybox 755 0 0
-file /stage1/init source/out/ramdisk/init 755 0 0
+file /stage1/busybox source/out/config/busybox 755 0 0
+file /stage1/init source/out/config/init 755 0 0
 dir /sys 755 0 0
 dir /mnt 755 0 0
 dir /mnt/.lfs 755 0 0
